@@ -1,0 +1,77 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px 10%; /* Use percentages for better responsiveness */
+    /* Adjusted margin for smaller screens */
+}
+
+.about-title {
+    position: relative;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.about-title h1 {
+    font-size: 36px; /* Adjusted font size for heading */
+    text-align: center; /* Center the title */
+}
+
+.about-title p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center; /* Center align text for better readability */
+}
+
+/* Skills Section */
+.about-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns dynamically */
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Progress Bar Container */
+.progressbar-container {
+    width: 100%; /* Make width responsive */
+    max-width: 180px; /* Prevent it from getting too big */
+    height: auto; /* Allow flexibility */
+    font-weight: 600;
+    color: white;
+    padding: 1px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align text */
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .About {
+        margin: 40px 5%; /* Adjust margins for smaller screens */
+        gap: 40px; /* Reduce gap between sections */
+    }
+
+    .about-title {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+
+    .about-title h1 {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+
+    .about-title p {
+        font-size: 18px; /* Smaller font size for paragraphs */
+        line-height: 28px; /* Adjust line height for readability */
+    }
+
+    .about-skills {
+        gap: 20px; /* Reduce gap between skill items */
+    }
+
+    .progressbar-container {
+        max-width: 150px; /* Smaller max width for progress bars */
+    }
+}

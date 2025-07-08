@@ -1,0 +1,158 @@
+/* My Projects Container */
+.myprojects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 88px;
+    margin: 80px 10%; /* Use percentages for better responsiveness */
+}
+
+/* Title Section */
+.myproject-title {
+    position: relative;
+}
+
+.myproject-title h2 {
+    padding: 0px 30px;
+    font-size: 60px;
+    text-align: center; /* Center the title */
+}
+
+/* Projects List */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Individual Project Card */
+.project-card {
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/* Hover Effect for Project Card */
+.project-card:hover {
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Project Image */
+.project-content img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Set a max width */
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Project Title */
+.project-content h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 28px;
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100.26%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Project Description */
+.project-content p {
+    margin-left: 10px;
+    color: #d4d4d4;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+/* Project Media (GitHub + Image) */
+.project-media {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 40px; /* Space between GitHub icon and image */
+}
+
+/* GitHub Icon */
+.github-icon1 {
+    color: #DF8908;
+    width: 40px;
+    height: 40px;
+}
+
+/* Show More Button */
+.project-showmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto 80px auto;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    padding: 30px 60px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.project-showmore:hover {
+    gap: 30px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .myprojects-container {
+        margin: 40px 5%; /* Adjust margins for smaller screens */
+    }
+
+    .myproject-title h2 {
+        font-size: 40px; /* Smaller font size for heading */
+    }
+
+    .projects-list {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .project-card {
+        padding: 15px; /* Reduce padding for project cards */
+    }
+
+    .project-content {
+        gap: 20px; /* Reduce gap for project content */
+    }
+
+    .project-content h3 {
+        font-size: 24px; /* Smaller font size for project titles */
+    }
+
+    .project-content p {
+        font-size: 18px; /* Smaller font size for project descriptions */
+        line-height: 28px; /* Adjust line height for readability */
+    }
+
+
+    .project-media {
+        gap: 20px; /* Reduce gap between GitHub icon and image */
+    }
+
+    .project-showmore {
+        padding: 20px 40px; /* Reduce padding for show more button */
+        font-size: 18px; /* Smaller font size for button */
+    }
+}
