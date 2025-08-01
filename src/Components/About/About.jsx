@@ -64,9 +64,9 @@ const About = () => {
     <div id="About" className="About" ref={aboutRef}>
       <div className="about-title">
         <h1>About me</h1>
-        <p>I'm passionate about building innovative digital solutions. With a strong interest in full-stack web development, embedded systems, and AI. I love exploring the intersection of software and hardware.</p>
+        <p>I have a deep interest in Embedded Systems, IoT, and Full-Stack Web Development. I love working on projects that connect the physical and digital worlds—whether it's developing smart devices or building scalable web applications.</p>
         <p>                                                                                                                                                    </p>
-        <p>I enjoy working on projects that blend creativity with functionality, whether it’s developing responsive web applications, designing IoT systems, or diving into computer vision and robotics. My goal is to continuously learn, innovate, and contribute to impactful tech solutions.</p>
+        <p>My passion lies in creating practical, real-world solutions by combining low-level hardware control with intuitive user interfaces. I'm always eager to explore new technologies, learn hands-on, and contribute to impactful tech innovations.</p>
       </div>
       <div className="about-skills">
         {skills.map((skill, index) => (

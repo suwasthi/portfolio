@@ -1,59 +1,44 @@
 .footer-container {
-  color: white;
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
   text-align: center;
-  padding: 65px 0;
-  font-size: 14px;
-  position: relative;
-  bottom: 0;
   width: 100%;
+  border-top: 1px solid #444;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .icon {
   color: #DF8908;
-  font-size: 39px;
-  transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
-  cursor: pointer;
+  font-size: 36px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
+  color: #B415FF;
 }
 
-.github-icon:hover { color: #B415FF; }
-.linkedin-icon:hover { color: #B415FF; }
-.facebook-icon:hover { color: #B415FF; }
-.instagram-icon:hover { color: #B415FF; }
-
 .copyright {
-  font-size: 19px;
-  opacity: 0.7;
-} 
+  font-size: 16px;
+  color: #bbb;
+  opacity: 0.75;
+}
 
-@media(max-width:768px) {
-  .footer-container {
-      margin: 30px 20px;
-      padding: 40px 0;
-  }
-
-  .social-icons {
-      gap: 15px;
-      margin-bottom: 15px;
-  }
-
+@media (max-width: 600px) {
   .icon {
-      font-size: 40px; 
+    font-size: 32px;
   }
 
   .copyright {
-      font-size: 16px; 
-      opacity: 0.8;
+    font-size: 14px;
   }
 }
-

@@ -25,11 +25,11 @@ const Achievements_data = [
     },
 
     {
-        a_name: "SpiritX - Most Popular Award",
+        a_name: "SpiritX - Most Popular Idea Award",
         a_desc: "Won the Most Popular Award at SpiritX, a national-level innovation challenge organized by MoraSpirit, for our impactful and creative project that captivated both the panel and the public.",
         img_src: spiritx,
         details: [
-            { Category: "Award", Value: "Most Popular" },
+            { Category: "Award", Value: "Most Popular Idea" },
             { Category: "Organized By", Value: "MoraSpirit" },
             { Category: "Event", Value: "SpiritX" }
         ],
