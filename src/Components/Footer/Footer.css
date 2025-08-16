@@ -32,6 +32,28 @@
   color: #bbb;
   opacity: 0.75;
 }
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .social-icons,
+  .copyright {
+    flex: 1;              /* each side takes equal space */
+  }
+
+  .social-icons {
+    justify-content: flex-start;  /* align icons left side */
+  }
+
+  .copyright {
+    text-align: right;            /* align text right side */
+  }
+}
+
 
 /* @media (max-width: 600px) {
   .icon {
@@ -42,5 +64,6 @@
     font-size: 14px;
   }
 } */
+
 
 
