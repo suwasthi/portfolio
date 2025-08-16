@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import my_img from '../../assets/my_img.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import myResume from '../../assets/Suwasthiga_CV-july2025.pdf'; // Import your resume PDF // for open in new tab the cv text-decoration: none;
+import myResume from '../../assets/Suwasthiga_Nagendramoorthy(Embedded).pdf'; // Import your resume PDF // for open in new tab the cv text-decoration: none;
 
 const Header = () => {
 
@@ -30,3 +30,4 @@ const Header = () => {
 }
 
 export default Header
+
